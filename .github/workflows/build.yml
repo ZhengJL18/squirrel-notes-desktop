@@ -58,9 +58,17 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build & publish release
+      - name: Build installer (no publish)
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           npm run build
-          npx electron-builder --win nsis --publish always
+          npx electron-builder --win nsis --publish never
+
+      - name: Create GitHub Release & upload
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: 松鼠症笔记 ${{ github.ref_name }}
+          files: release/squirrel-notes-setup-*.exe
+          fail_on_unmatched_files: true
