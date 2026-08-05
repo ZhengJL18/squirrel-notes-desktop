@@ -34,8 +34,9 @@ export default defineConfig({
     },
     plugins: [react()],
     build: {
+      // electron-vite 的 renderer root 就是 src，input 相对它。
       rollupOptions: {
-        input: 'src/index.html'
+        input: 'index.html'
       }
     }
   }
