@@ -32,14 +32,6 @@ export default defineConfig({
         '@renderer': resolve('src')
       }
     },
-    plugins: [react()],
-    build: {
-      outDir: 'out/renderer',
-      rollupOptions: {
-        input: {
-          index: resolve('src/index.html')
-        }
-      }
-    }
+    plugins: [react()]
   }
 })
