@@ -5,7 +5,7 @@ import type {
   TranscriptSegment,
   AsrPresetInfo,
   TranscribeProgress
-} from '../../electron/services/types'
+} from '../../../electron/services/types'
 
 export interface Settings {
   asrPresetId: string

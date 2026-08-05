@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
-import type { Subject, Note, NoteAudio, TranscribeProgress } from '../electron/services/types'
+import type { Subject, Note, NoteAudio, TranscribeProgress } from '../../electron/services/types'
 import { NavPane } from './components/NavPane'
 import { NoteEditor } from './components/NoteEditor'
 import { AudioPane } from './components/AudioPane'

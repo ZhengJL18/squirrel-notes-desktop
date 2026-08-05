@@ -1,4 +1,4 @@
-import type { NoteAudio } from '../../electron/services/types'
+import type { NoteAudio } from '../../../electron/services/types'
 import { formatDuration } from '../lib/markdown'
 import { ContextMenu, type MenuItem } from './ContextMenu'
 import { useState } from 'react'

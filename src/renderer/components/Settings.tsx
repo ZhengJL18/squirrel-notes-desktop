@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import type { AsrPresetInfo } from '../../electron/services/types'
+import type { AsrPresetInfo } from '../../../electron/services/types'
 import type { Settings as SettingsType } from '../lib/api'
 import { Modal } from './Modal'
 

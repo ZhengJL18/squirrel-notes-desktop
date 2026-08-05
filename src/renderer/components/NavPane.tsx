@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import type { Subject, Note } from '../../electron/services/types'
+import type { Subject, Note } from '../../../electron/services/types'
 import { ContextMenu, type MenuItem } from './ContextMenu'
 import { Modal } from './Modal'
 

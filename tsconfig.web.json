@@ -14,8 +14,8 @@
     "useDefineForClassFields": true,
     "baseUrl": ".",
     "paths": {
-      "@renderer/*": ["src/*"]
+      "@renderer/*": ["src/renderer/*"]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx"]
+  "include": ["src/renderer/**/*.ts", "src/renderer/**/*.tsx"]
 }
